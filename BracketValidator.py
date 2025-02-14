@@ -87,22 +87,6 @@ def ValidateBracket(InputString):
 
 #-----------------------------------------
 #TEST CASE 1
-# { LEVEL 0
-#     ( LEVEL 1
-#         ( LEVEL 2
-#             () LEVEL 3
-#             () LEVEL 4
-#             ( LEVEL 5
-#                 ( LEVEL 6
-#                     ( LEVEL 7
-#                         () LEVEL 8
-#                     )
-#                 )
-#             )
-#         )
-#     )
-# ) LEVEL 9 <-- ERROR
-# }
 string = "{((()()(((()))))))}"
 ValidateBracket(string);
 #-----------------------------------------
