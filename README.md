@@ -106,11 +106,11 @@ ValidateBracket(string);
 string = "{a}[b]{(c)([{}])"
 ValidateBracket(string);
 #-----------------------------------------
-#TEST CASE 5
+#TEST CASE 6
 string = "{([])}"
 ValidateBracket(string);
 #-----------------------------------------
-#TEST CASE 6
+#TEST CASE 7
 string = "{[(])}"
 ValidateBracket(string);
 #-----------------------------------------
