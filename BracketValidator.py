@@ -2,11 +2,13 @@
 # Pass in a string, and validate that all Brackets of types: ( ) { } [ ] are correctly closed and opened.
 # Written by Kyle Romero, hand coded (No AI) with the aid of W3Schools to refresh on Python syntax
 
-#Value object to be stored in a Dictionary
+# Pass in a string, and validate that all Brackets of types: ( ) { } [ ] are correctly closed and opened.
+# Written by Kyle Romero, hand coded (No AI) with the aid of W3Schools to refresh on Python syntax
 
 #Set to True to see more console output
 DEBUG = True;
 
+#Value object to be stored in a Dictionary
 class BracketInstance:
     def __init__(self, Start, End, Type):
         self.Start = Start;
