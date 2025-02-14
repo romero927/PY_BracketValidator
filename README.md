@@ -3,7 +3,7 @@
 # Written by Kyle Romero, hand coded (No AI) with the aid of W3Schools to refresh on Python syntax
 
 #Set to True to see more console output
-DEBUG = True;
+DEBUG = False;
 
 #Value object to be stored in a Dictionary
 class BracketInstance:
@@ -87,22 +87,6 @@ def ValidateBracket(InputString):
 
 #-----------------------------------------
 #TEST CASE 1
-# { LEVEL 0
-#     ( LEVEL 1
-#         ( LEVEL 2
-#             () LEVEL 3
-#             () LEVEL 4
-#             ( LEVEL 5
-#                 ( LEVEL 6
-#                     ( LEVEL 7
-#                         () LEVEL 8
-#                     )
-#                 )
-#             )
-#         )
-#     )
-# ) LEVEL 9 <-- ERROR
-# }
 string = "{((()()(((()))))))}"
 ValidateBracket(string);
 #-----------------------------------------
@@ -127,7 +111,7 @@ ValidateBracket(string);
 PS C:\Users\Kyle\Desktop> python .\BracketValidator.py
 Iterating through string:  {((()()(((()))))))}
 Invalid Brackets:
-Type: {  | Start Index: 0  | Stop Index: None  | Level: 0 
+Type: {  | Start Index: 0  | Stop Index: None  | Level: 0
 
 Invalid Brackets:
 Type: )  | Start Index: None  | Stop Index: 17  | Level: 1
@@ -136,20 +120,20 @@ Invalid Brackets:
 Type: }  | Start Index: None  | Stop Index: 18  | Level: 2
 
 -----------------------------------------------
-Iterating through string:  {Hello (Kyle) {How (are) you}) 
+Iterating through string:  {Hello (Kyle) {How (are) you})
 Invalid Brackets:
-Type: {  | Start Index: 0  | Stop Index: None  | Level: 0 
+Type: {  | Start Index: 0  | Stop Index: None  | Level: 0
 
 Invalid Brackets:
 Type: )  | Start Index: None  | Stop Index: 29  | Level: 1
 
 -----------------------------------------------
-Iterating through string:  {Hello (Kyle How are you})     
+Iterating through string:  {Hello (Kyle How are you})
 Invalid Brackets:
-Type: {  | Start Index: 0  | Stop Index: None  | Level: 0 
+Type: {  | Start Index: 0  | Stop Index: None  | Level: 0
 
 Invalid Brackets:
-Type: (  | Start Index: 7  | Stop Index: None  | Level: 1 
+Type: (  | Start Index: 7  | Stop Index: None  | Level: 1
 
 Invalid Brackets:
 Type: }  | Start Index: None  | Stop Index: 24  | Level: 2
@@ -163,8 +147,6 @@ No Invalid Brackets
 -----------------------------------------------
 Iterating through string:  {a}[b]{(c)([{}])
 Invalid Brackets:
-Type: {  | Start Index: 6  | Stop Index: None  | Level: 0 
+Type: {  | Start Index: 6  | Stop Index: None  | Level: 0
 
------------------------------------------------
-```
-        
+-----------------------------------------------```
