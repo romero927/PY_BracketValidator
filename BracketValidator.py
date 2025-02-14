@@ -17,7 +17,7 @@ class BracketInstance:
 def ValidateBracket(InputString):
     #Instantiate your objects
     Dictionary = {};
-    Key = 0; #What Dictionary Key are we currently on?
+    Key = 0; #What Dictionary Key are we currently on? Key = Current Level, Key - 1 = Previous Level, Key + 1 = Next Level
     ix = 0; #What Character in the string are we currently on?
     print("Iterating through string: ", InputString);
     if(DEBUG):print('-----------------------------------------------');
