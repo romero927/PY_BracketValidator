@@ -119,7 +119,7 @@ ValidateBracket(string);
 PS C:\Users\Kyle\Desktop> python .\BracketValidator.py
 Iterating through string:  {((()()(((()))))))}
 Invalid Brackets:
-Type: {  | Start Index: 0  | Stop Index: None  | Level: 0
+Type: {  | Start Index: 0  | Stop Index: None  | Level: 0 
 
 Invalid Brackets:
 Type: )  | Start Index: None  | Stop Index: 17  | Level: 1
@@ -128,9 +128,9 @@ Invalid Brackets:
 Type: }  | Start Index: None  | Stop Index: 18  | Level: 2
 
 -----------------------------------------------
-Iterating through string:  {Hello (Kyle) {How (are) you})
+Iterating through string:  {Hello (Kyle) {How (are) you}) 
 Invalid Brackets:
-Type: {  | Start Index: 0  | Stop Index: None  | Level: 0
+Type: {  | Start Index: 0  | Stop Index: None  | Level: 0 
 
 Invalid Brackets:
 Type: )  | Start Index: None  | Stop Index: 29  | Level: 1
@@ -156,5 +156,28 @@ No Invalid Brackets
 Iterating through string:  {a}[b]{(c)([{}])
 Invalid Brackets:
 Type: {  | Start Index: 6  | Stop Index: None  | Level: 0
+
+-----------------------------------------------
+Iterating through string:  {([])}
+No Invalid Brackets
+-----------------------------------------------
+Iterating through string:  {[(])}
+Invalid Brackets:
+Type: {  | Start Index: 0  | Stop Index: None  | Level: 0
+
+Invalid Brackets:
+Type: [  | Start Index: 1  | Stop Index: None  | Level: 1
+
+Invalid Brackets:
+Type: (  | Start Index: 2  | Stop Index: None  | Level: 2
+
+Invalid Brackets:
+Type: ]  | Start Index: None  | Stop Index: 3  | Level: 3
+
+Invalid Brackets:
+Type: )  | Start Index: None  | Stop Index: 4  | Level: 4
+
+Invalid Brackets:
+Type: }  | Start Index: None  | Stop Index: 5  | Level: 5
 
 -----------------------------------------------```
