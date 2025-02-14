@@ -106,6 +106,14 @@ ValidateBracket(string);
 string = "{a}[b]{(c)([{}])"
 ValidateBracket(string);
 #-----------------------------------------
+#TEST CASE 5
+string = "{([])}"
+ValidateBracket(string);
+#-----------------------------------------
+#TEST CASE 6
+string = "{[(])}"
+ValidateBracket(string);
+#-----------------------------------------
 ```
 ```
 PS C:\Users\Kyle\Desktop> python .\BracketValidator.py
