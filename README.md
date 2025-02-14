@@ -1,4 +1,4 @@
-'''#Bracket Validator
+```#Bracket Validator
 # Pass in a string, and validate that all Brackets of types: ( ) { } [ ] are correctly closed and opened.
 # Written by Kyle Romero, hand coded (No AI) with the aid of W3Schools to refresh on Python syntax
 
@@ -123,7 +123,6 @@ ValidateBracket(string);
 string = "{a}[b]{(c)([{}])"
 ValidateBracket(string);
 #-----------------------------------------
-
-'''
+```
 
         
